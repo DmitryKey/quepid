@@ -29,8 +29,19 @@
           <ul class="list-inline" style="display:inline" role="group" aria-label="sort">
             <li>
               <a ng-class="{active: sort == 'defaultCaseOrder'}" ng-click="sortBy('default')">
+                  Modified
+                  <span ng-show="sortName == 'default'"
+                        class="glyphicon"
+                        ng-class="reverse ? 'glyphicon-arrow-up' : 'glyphicon-arrow-down'"
+                        aria-hidden="true">
+                  </span>
+              </a>
+            </li>
+
+            <li>
+              <a ng-class="{active: sort == 'manual'}" ng-click="sortBy('manual')">
                 Manual
-                <span ng-show="sortName == 'default'"
+                <span ng-show="sortName == 'manual'"
                   class="glyphicon"
                   ng-class="reverse ? 'glyphicon-arrow-up' : 'glyphicon-arrow-down'"
                   aria-hidden="true">

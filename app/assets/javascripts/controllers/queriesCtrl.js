@@ -344,6 +344,11 @@ angular.module('QuepidApp')
               $scope.sortName = 'default';
               $scope.queries.sortableOptions.disabled = false;
               break;
+            case 'manual':
+                  $scope.sort = 'manual';
+                  $scope.sortName = 'manual';
+                  $scope.queries.sortableOptions.disabled = false;
+                  break;
             case 'query':
               $scope.sort = 'queryText';
               $scope.sortName = 'query';
